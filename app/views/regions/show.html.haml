@@ -1,2 +1,18 @@
 %h1 Regions#show
-%p Find me in app/views/regions/show.html.erb
+
+= link_to 'Back to List', {action: 'index'}
+%br
+%br
+%table
+  %tr
+    %th Name:
+    %td
+      = @region.name
+  %tr
+    %th Image:
+    %td
+      = @region.image
+  %tr
+    %th Descrioption:
+    %td
+      = @region.description

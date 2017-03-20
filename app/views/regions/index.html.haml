@@ -1,2 +1,18 @@
 %h1 Regions#index
-%p Find me in app/views/regions/index.html.erb
+.container.region-container
+  .row.wrap-div-region
+    - @regions.each do |region|
+      .col-md-4
+        .hovereffect
+          = link_to (image_tag region.image,  class:"img-responsive-region"), region
+          = link_to region do
+            .overlay
+              .region-title
+                = region.name
+      .actions
+        = link_to 'Show', region
+        = link_to 'Edit', edit_region_path(id: region.id)
+        = link_to 'Delete', region_path(id: region.id), method: :delete, data: {confirm: 'Are you sure?'}
+      %br
+      %br
+= link_to ('Add New Region'), new_region_path
