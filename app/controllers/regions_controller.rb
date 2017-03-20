@@ -5,7 +5,9 @@ class RegionsController < ApplicationController
   end
 
   def show
+    # @region = Region.find(params[:id])
     @region = Region.find(params[:id])
+    @embroideries = @region.embroideries
   end
 
   def new

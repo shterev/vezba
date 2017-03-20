@@ -1,0 +1,8 @@
+= @embroideries.name
+
+= link_to 'BACK', :back
+= link_to 'DELETE', (@embroidery),
+                 method: :delete,
+                 data: { confirm: 'Are you sure?' }
+
+= image_tag @embroideries.image

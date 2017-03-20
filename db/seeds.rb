@@ -42,3 +42,81 @@
       regions.each do |name, image, description|
         Region.create( name: name, image: image, description: description )
       end
+
+
+region_embroideries = {}
+
+region_embroideries["Samokov Region"] = [
+  ["Sleeve female shirt", "2.jpg"],
+  ["Skirt", "3.jpg"],
+  ["Sleeve male shirt", "3.jpg"],
+  ["Neckline", "1.jpg"],
+  ["Аpron", "2.jpg"],
+  ["Sleeve male shirt", "3.jpg"],
+  ["Аpron", "2.jpg"],
+  ["Аpron", "3.jpg"]
+]
+
+region_embroideries["Lovech Region"] = [
+  ["Sleeve female shirt", "3.jpg"],
+  ["Skirt", "1.jpg"],
+  ["Sleeve male shirt", "2.jpg"],
+  ["Neckline", "1.jpg"],
+  ["Аpron", "3.jpg"],
+  ["Sleeve male shirt", "2.jpg"],
+  ["Аpron", "2.jpg"],
+  ["Аpron", "1.jpg"]
+]
+
+region_embroideries["Sofia Region"] = [
+  ["Sleeve female shirt", "1.jpg"],
+  ["Skirt", "2.jpg"],
+  ["Sleeve male shirt", "1.jpg"],
+  ["Neckline", "1.jpg"],
+  ["Аpron", "2.jpg"],
+  ["Sleeve male shirt", "1.jpg"],
+  ["Аpron", "2.jpg"],
+  ["Аpron", "1.jpg"]
+]
+
+region_embroideries["Kapanski Region"] = [
+  ["Sleeve female shirt", "2.jpg"],
+  ["Skirt", "3.jpg"],
+  ["Sleeve male shirt", "3.jpg"],
+  ["Neckline", "1.jpg"],
+  ["Аpron", "2.jpg"],
+  ["Sleeve male shirt", "3.jpg"],
+  ["Аpron", "2.jpg"],
+  ["Аpron", "3.jpg"]
+]
+
+region_embroideries["Vidin Region"] = [
+  ["Sleeve female shirt", "1.jpg"],
+  ["Skirt", "2.jpg"],
+  ["Sleeve male shirt", "1.jpg"],
+  ["Neckline", "1.jpg"],
+  ["Аpron", "2.jpg"],
+  ["Sleeve male shirt", "1.jpg"],
+  ["Аpron", "2.jpg"],
+  ["Аpron", "1.jpg"]
+]
+
+region_embroideries["Razlog Region"] = [
+  ["Sleeve female shirt", "1.jpg"],
+  ["Skirt", "2.jpg"],
+  ["Sleeve male shirt", "3.jpg"],
+  ["Neckline", "1.jpg"],
+  ["Аpron", "3.jpg"],
+  ["Sleeve male shirt", "2.jpg"],
+  ["Neckline", "3.jpg"],
+  ["Sleeve male shirt", "1.jpg"]
+]
+
+
+region_embroideries.each do | region_name, embroideries |
+  region = Region.find_by(name: region_name)
+
+  embroideries.each do | name, image |
+    Embroidery.create(name: name, region_id: region.id, image: image)
+  end
+end

@@ -1,18 +1,32 @@
-%h1 Regions#show
+-# %h1 Regions#show
+-#
+-# = link_to 'Back to List', {action: 'index'}
+-# %br
+-# %br
+-# %table
+-#   %tr
+-#     %th Name:
+-#     %td
+-#       = @region.name
+-#   %tr
+-#     %th Image:
+-#     %td
+-#       = @region.image
+-#   %tr
+-#     %th Descrioption:
+-#     %td
+-#       = @region.description
+= image_tag @region.image
+= @region.name
+= @region.description
 
-= link_to 'Back to List', {action: 'index'}
-%br
-%br
-%table
-  %tr
-    %th Name:
-    %td
-      = @region.name
-  %tr
-    %th Image:
-    %td
-      = @region.image
-  %tr
-    %th Descrioption:
-    %td
-      = @region.description
+= link_to "ADD MODEL", new_region_embroidery_path(@region)
+
+
+
+- @embroideries.each do |embroidery|
+  = link_to (image_tag embroidery.image), region_embroidery_path(embroidery.region_id, embroidery)
+
+  = embroidery.name
+
+  = link_to "View", region_embroidery_path(embroidery.region_id, embroidery)
