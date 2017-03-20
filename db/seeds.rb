@@ -40,7 +40,7 @@
       ]
 
       regions.each do |name, image, description|
-        Region.create( name: name, image: image, description: description )
+        Region.create( name: name, image: File.open(File.join(Rails.root.join("test/fixtures/images/#{image}"))), description: description )
       end
 
 
@@ -117,6 +117,6 @@ region_embroideries.each do | region_name, embroideries |
   region = Region.find_by(name: region_name)
 
   embroideries.each do | name, image |
-    Embroidery.create(name: name, region_id: region.id, image: image)
+    Embroidery.create(name: name, region_id: region.id, image: File.open(File.join(Rails.root.join("test/fixtures/images/#{image}"))))
   end
 end
