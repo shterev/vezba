@@ -120,3 +120,4 @@ region_embroideries.each do | region_name, embroideries |
     Embroidery.create(name: name, region_id: region.id, image: File.open(File.join(Rails.root.join("test/fixtures/images/#{image}"))))
   end
 end
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
