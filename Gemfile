@@ -35,6 +35,11 @@ gem 'mini_magick', '~> 4.3'
 
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
+
+gem 'bootstrap-sass'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

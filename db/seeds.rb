@@ -7,32 +7,32 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
       regions = [
-        ["Samokov Region", "samokovsko_1.jpg",
+        ["Самоковски", "samokovsko_1.jpg",
         %{"Lorem ipsum dolor sit amet, populo quodsi adipisci est ea, eam fabellas torquatos elaboraret no. Has ut nonumes iudicabit. Autem exerci est no, timeam admodum facilisi sea at. Qui eu ipsum volutpat, case phaedrum ex duo. Deseruisse honestatis suscipiantur duo ei, ne nonumy iisque eruditi sea. Dicit vivendo denique ea est. His eu doming doctus, has nihil liberavisse et, sea an semper deserunt ullamcorper.
 
       Ne eos nominavi appetere quaerendum, convenire molestiae sadipscing ut mea. Exerci gloriatur dissentias per ne, nam illum utamur in. Pri ut quem habemus adipiscing, alia repudiandae id vim. At harum paulo nam, per te tollit iudicabit."}],
 
-        ["Lovech Region","loveshko_1.jpg",
+        ["Ловешки","loveshko_1.jpg",
         %{"ЛLorem ipsum dolor sit amet, populo quodsi adipisci est ea, eam fabellas torquatos elaboraret no. Has ut nonumes iudicabit. Autem exerci est no, timeam admodum facilisi sea at. Qui eu ipsum volutpat, case phaedrum ex duo. Deseruisse honestatis suscipiantur duo ei, ne nonumy iisque eruditi sea. Dicit vivendo denique ea est. His eu doming doctus, has nihil liberavisse et, sea an semper deserunt ullamcorper.
 
       Ne eos nominavi appetere quaerendum, convenire molestiae sadipscing ut mea. Exerci gloriatur dissentias per ne, nam illum utamur in. Pri ut quem habemus adipiscing, alia repudiandae id vim. At harum paulo nam, per te tollit iudicabit."}],
 
-        ["Sofia Region","sofiisko_1.jpg",
+        ["Софийски","sofiisko_1.jpg",
         %{"Lorem ipsum dolor sit amet, populo quodsi adipisci est ea, eam fabellas torquatos elaboraret no. Has ut nonumes iudicabit. Autem exerci est no, timeam admodum facilisi sea at. Qui eu ipsum volutpat, case phaedrum ex duo. Deseruisse honestatis suscipiantur duo ei, ne nonumy iisque eruditi sea. Dicit vivendo denique ea est. His eu doming doctus, has nihil liberavisse et, sea an semper deserunt ullamcorper.
 
       Ne eos nominavi appetere quaerendum, convenire molestiae sadipscing ut mea. Exerci gloriatur dissentias per ne, nam illum utamur in. Pri ut quem habemus adipiscing, alia repudiandae id vim. At harum paulo nam, per te tollit iudicabit."}],
 
-        ["Kapanski Region","kapanski_1.jpg",
+        ["Капански","kapanski_1.jpg",
         %{"Lorem ipsum dolor sit amet, populo quodsi adipisci est ea, eam fabellas torquatos elaboraret no. Has ut nonumes iudicabit. Autem exerci est no, timeam admodum facilisi sea at. Qui eu ipsum volutpat, case phaedrum ex duo. Deseruisse honestatis suscipiantur duo ei, ne nonumy iisque eruditi sea. Dicit vivendo denique ea est. His eu doming doctus, has nihil liberavisse et, sea an semper deserunt ullamcorper.
 
       Ne eos nominavi appetere quaerendum, convenire molestiae sadipscing ut mea. Exerci gloriatur dissentias per ne, nam illum utamur in. Pri ut quem habemus adipiscing, alia repudiandae id vim. At harum paulo nam, per te tollit iudicabit."}],
 
-        ["Vidin Region","vidinski_1.jpg",
+        ["Видиснки","vidinski_1.jpg",
         %{"Lorem ipsum dolor sit amet, populo quodsi adipisci est ea, eam fabellas torquatos elaboraret no. Has ut nonumes iudicabit. Autem exerci est no, timeam admodum facilisi sea at. Qui eu ipsum volutpat, case phaedrum ex duo. Deseruisse honestatis suscipiantur duo ei, ne nonumy iisque eruditi sea. Dicit vivendo denique ea est. His eu doming doctus, has nihil liberavisse et, sea an semper deserunt ullamcorper.
 
       Ne eos nominavi appetere quaerendum, convenire molestiae sadipscing ut mea. Exerci gloriatur dissentias per ne, nam illum utamur in. Pri ut quem habemus adipiscing, alia repudiandae id vim. At harum paulo nam, per te tollit iudicabit."}],
 
-        ["Razlog Region","razloshko_1.jpg",
+        ["Разлошки","razloshko_1.jpg",
         %{"Lorem ipsum dolor sit amet, populo quodsi adipisci est ea, eam fabellas torquatos elaboraret no. Has ut nonumes iudicabit. Autem exerci est no, timeam admodum facilisi sea at. Qui eu ipsum volutpat, case phaedrum ex duo. Deseruisse honestatis suscipiantur duo ei, ne nonumy iisque eruditi sea. Dicit vivendo denique ea est. His eu doming doctus, has nihil liberavisse et, sea an semper deserunt ullamcorper.
 
       Ne eos nominavi appetere quaerendum, convenire molestiae sadipscing ut mea. Exerci gloriatur dissentias per ne, nam illum utamur in. Pri ut quem habemus adipiscing, alia repudiandae id vim. At harum paulo nam, per te tollit iudicabit."}]
@@ -46,7 +46,7 @@
 
 region_embroideries = {}
 
-region_embroideries["Samokov Region"] = [
+region_embroideries["Самоковски"] = [
   ["Sleeve female shirt", "2.jpg"],
   ["Skirt", "3.jpg"],
   ["Sleeve male shirt", "3.jpg"],
@@ -57,7 +57,7 @@ region_embroideries["Samokov Region"] = [
   ["Аpron", "3.jpg"]
 ]
 
-region_embroideries["Lovech Region"] = [
+region_embroideries["Ловешки"] = [
   ["Sleeve female shirt", "3.jpg"],
   ["Skirt", "1.jpg"],
   ["Sleeve male shirt", "2.jpg"],
@@ -68,7 +68,7 @@ region_embroideries["Lovech Region"] = [
   ["Аpron", "1.jpg"]
 ]
 
-region_embroideries["Sofia Region"] = [
+region_embroideries["Софийски"] = [
   ["Sleeve female shirt", "1.jpg"],
   ["Skirt", "2.jpg"],
   ["Sleeve male shirt", "1.jpg"],
@@ -79,7 +79,7 @@ region_embroideries["Sofia Region"] = [
   ["Аpron", "1.jpg"]
 ]
 
-region_embroideries["Kapanski Region"] = [
+region_embroideries["Капански"] = [
   ["Sleeve female shirt", "2.jpg"],
   ["Skirt", "3.jpg"],
   ["Sleeve male shirt", "3.jpg"],
@@ -90,7 +90,7 @@ region_embroideries["Kapanski Region"] = [
   ["Аpron", "3.jpg"]
 ]
 
-region_embroideries["Vidin Region"] = [
+region_embroideries["Видиснки"] = [
   ["Sleeve female shirt", "1.jpg"],
   ["Skirt", "2.jpg"],
   ["Sleeve male shirt", "1.jpg"],
@@ -101,7 +101,7 @@ region_embroideries["Vidin Region"] = [
   ["Аpron", "1.jpg"]
 ]
 
-region_embroideries["Razlog Region"] = [
+region_embroideries["Разлошки"] = [
   ["Sleeve female shirt", "1.jpg"],
   ["Skirt", "2.jpg"],
   ["Sleeve male shirt", "3.jpg"],
