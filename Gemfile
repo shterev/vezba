@@ -39,6 +39,8 @@ gem 'devise'
 gem 'bootstrap-sass'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 
+gem 'kaminari'
+
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

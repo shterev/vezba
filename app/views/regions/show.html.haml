@@ -21,4 +21,4 @@
                   %p.e-name= embroidery.name
                   %p.e-name= link_to "View", region_embroidery_path(embroidery.region_id, embroidery), class: "button-view btn1"
 
-      -# = paginate @embroideries, :left => 1, :right => 3
+    = paginate @embroideries, :left => 1, :right => 3

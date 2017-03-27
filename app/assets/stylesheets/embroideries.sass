@@ -100,68 +100,45 @@
 
 // PAGINATION
 
-.first, .last
-  display:none
-
-  .next, .prev
-  padding: 5px 15px
-  display: inline-block
-  border-radius: 2px
-  background: #DDE3E7
-  font-family: Open Sans
-  font-size: 20px
+.pagination
+  float: none
+  margin: 40px 0 70px 0
   color: #7b8996
-  cursor: pointer
-  text-decoration: none
-  transition: all 0.2s
+  .page a
+    background: white
+    font-family: Open Sans
+    font-size: 20px
+    color: #777777
+    cursor: pointer
+    transition: all 0.2s
+    padding: 10px
 
-
-.page.current
-  padding: 5px 15px
-  display: inline-block
+.pagination a,
+.pagination span.page.current
   border-radius: 2px
   font-family: Open Sans
   font-size: 20px
-  text-decoration: none
+  font-weight: 400
   transition: all 0.2s
-  padding: 5px 15px
-  background: #4caf50
-  color: #fff
+  background: white
+  color: green
   cursor: pointer
   text-decoration: none
+  padding: 10px
+  text-shadow: none
+  box-shadow: none
+  border: 0
 
+.pagination span.page.current:not(.disabled):hover,
+.pagination a:not(.disabled):hover
+  background-image: linear-gradient(180deg, #ffffff, #ffffff)
+  box-shadow: none
+  background-color: white
+  color: red
+.pagination span.page.current:not(.disabled):active
+  background-image: linear-gradient(180deg, #ffffff, #ffffff)
+  box-shadow: none
+  background-color: white
 
-.page a
-  padding: 5px 15px
-  display: inline-block
-  border-radius: 2px
-  background: #DDE3E7
-  font-family: Open Sans
-  font-size: 20px
-  color: #7b8996
-  cursor: pointer
-  text-decoration: none
-  transition: all 0.2s
-
-
-.page > a:hover
-  background: #4caf50
-  color: white
-  text-decoration: none
-
-
-.next:hover, .prev:hover
-  text-decoration: none
-  background: #4caf50
-  color: white
-
-
-.pagination > .page > a
-  text-decoration: none
-  color: #7b8996
-
-
-.pagination > .page > a:hover
-  text-decoration: none
-  cursor: pointer
-  color: white
+nav.pagination span.page.current
+  padding: 10px
