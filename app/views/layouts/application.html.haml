@@ -15,19 +15,16 @@
 
         .col-md-9
           %ul.navbar-right
-            %li= link_to 'Начало', "#", class: "menu-btn"
-            %li= link_to "За нас", "#", class: "menu-btn"
-            %li= link_to 'Шевици', regions_path, class: "menu-btn #{current_page?(regions_path(:region_id)) ? "current" : nil }"
-            -# %li= link_to "BLOG"
-            -# %li= link_to "CONTACTS"
-
-          .nav-right
-            %ul.nav-menu-right.navbar-right
-              %li.social-btn.fb-en= link_to 'fb', "https://www.facebook.com/groups/vezba/"
+            %li= link_to 'Начало', root_path, class: "menu-btn"
+            %li= link_to "За нас", welcome_about_path, class: "menu-btn #{current_page?(welcome_about_path) ? "current" : nil }"
+            %li= link_to 'Шевици', regions_path, class: "menu-btn #{current_page?(regions_path) ? "current" : nil }"
+            %li= link_to "Блог", '#'
+            %li= link_to "Контакти", '#'
 
     = yield
 
-    .footer
-      .container-fluid
-        %p Created By
-        = link_to 'Gloria Angelova', "http://gloryangelova.com"
+  .footer
+    .container-fluid
+      %span Created By
+      %span= link_to 'Gloria Angelova', "http://gloryangelova.com"
+      %p.social-btn.fb-en= link_to 'f', "https://www.facebook.com/groups/vezba/"

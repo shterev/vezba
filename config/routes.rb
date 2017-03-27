@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  root 'regions#index'
+
+  root 'welcome#home'
+
+  get 'welcome/about'
 
   resources :regions do
     resources :embroideries
