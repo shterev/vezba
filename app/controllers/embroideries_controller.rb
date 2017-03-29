@@ -6,6 +6,18 @@ class EmbroideriesController < ApplicationController
 
   def show
     @embroideries = Embroidery.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.json
+      format.pdf {render template: 'embroideries/embroidery',
+                         pdf: 'embroidery',
+                         disposition: 'attachment',
+                         page_size:'A4',
+                         margin: {top: 10,
+                                  left: 20,
+                                  right: 20}}
+
+    end
   end
 
   def new

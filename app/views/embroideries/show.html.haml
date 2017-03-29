@@ -3,7 +3,7 @@
     .col-md-6.name-single-show.navbar-left= @embroideries.name
     .col-md-6.navbar-right
       = link_to 'BACK', :back, class: "back-btn btn4"
-      = link_to 'Download PDF', :back, class: "back-btn btn4"
+      = link_to 'Download PDF', region_embroidery_path(@embroideries.region_id, format: "pdf"), class: "back-btn btn4"
     .row
       .col-md-12.wrap-show-img
         = image_tag @embroideries.image, class: "img-single-show"
