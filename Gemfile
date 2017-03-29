@@ -44,6 +44,8 @@ gem 'kaminari'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 
+gem 'mail_form'
+
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
