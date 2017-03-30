@@ -2,15 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html
-  position:relative
-  min-height: 100%
-
-body
-  background: white
-  text-align: center
+html, body
+  height: 100%
   margin: 0px
   padding: 0px
+  text-align: center
+
+.wraper
+  min-height: 100%
+  position: relative
+
+.content
+  padding-bottom: 100px
+
+// body
+//
+//   background: white
+//   text-align: center
+//   margin: 0px
+//   padding: 0px
 
 .brand
   margin-top: 1%
@@ -115,6 +125,14 @@ body
   &:hover
     color: #ea3838
 
+.footer
+  // padding-top: 35px
+  // padding-bottom: 50px
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 100px
 .footer p
   margin: 40px
   a

@@ -8,23 +8,24 @@
     = csrf_meta_tags
 
   %body
-    .navbar.navbar-default
-      .row.container-fluid
-        .col-md-3.navbar-header
-          = link_to image_tag "Logo.png", class: "brand navbar-left"
+    .wraper
+      .navbar.navbar-default
+        .row.container-fluid
+          .col-md-3.navbar-header
+            = link_to image_tag "Logo.png", class: "brand navbar-left"
 
-        .col-md-9
-          %ul.navbar-right
-            %li= link_to "Начало", root_path, class: "menu-btn"
-            %li= link_to "Идея", welcome_about_path, class: "menu-btn #{current_page?(welcome_about_path) ? "current" : nil }"
-            %li= link_to "Шевици", regions_path, class: "menu-btn #{current_page?(regions_path) ? "current" : nil }"
-            %li= link_to "Блог", '#'
-            %li= link_to "Контакти", new_contact_path, class: "menu-btn #{current_page?(new_contact_path) ? "current" : nil }"
+          .col-md-9
+            %ul.navbar-right
+              %li= link_to "Начало", root_path, class: "menu-btn"
+              %li= link_to "Идея", welcome_about_path, class: "menu-btn #{current_page?(welcome_about_path) ? "current" : nil }"
+              %li= link_to "Шевици", regions_path, class: "menu-btn #{current_page?(regions_path) ? "current" : nil }"
+              %li= link_to "Блог", '#'
+              %li= link_to "Контакти", new_contact_path, class: "menu-btn #{current_page?(new_contact_path) ? "current" : nil }"
+      .content
+        = yield
 
-    = yield
+      .footer.container-fluid
 
-  .footer
-    .container-fluid
-      %span Created By
-      %span= link_to 'Gloria Angelova', "http://gloryangelova.com"
-      %p.social-btn.fb-en= link_to 'f', "https://www.facebook.com/groups/vezba/"
+        %span Created By
+        %span= link_to 'Gloria Angelova', "http://gloryangelova.com"
+        %p.social-btn.fb-en= link_to 'f', "https://www.facebook.com/groups/vezba/"
