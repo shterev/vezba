@@ -44,6 +44,8 @@ gem 'wkhtmltopdf-binary'
 
 gem 'mail_form'
 
+gem 'sendgrid-ruby'
+
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
