@@ -80,7 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: app-vezba_production
+  database: db/production.sqlite3
   username: vezba
   password: vezba_123
   adapter: postgresql
