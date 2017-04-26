@@ -17,7 +17,7 @@ html, body
 
 .brand
   margin-top: 6% 6%
-  width: 50%
+  width: 40%
 
 .row
   margin-left: 0
@@ -94,6 +94,32 @@ html, body
 
 .region-container
   padding-top: 40px
+
+// HAMBURGER MENU
+
+.menu-hamburger-button
+  height: 30px
+  width: 30px
+  margin-top: 8px
+  margin-left: 18px
+  cursor: pointer
+  background-image: url('favi.png')
+  background-size: cover
+  display: none
+
+.menu
+  list-style: none
+  padding: 0
+  margin: 0
+  overflow: hidden
+  width: 100%
+  height: 46px
+  transition: max-height 0.3s
+
+@media screen and (max-width: 880px)
+  .opened
+    max-height: 276px
+
 // BUTTONS
 .add-wrap-div
   padding: 200px 0 300px 0

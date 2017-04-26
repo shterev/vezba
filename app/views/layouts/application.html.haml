@@ -12,7 +12,8 @@
       .navbar.navbar-default
         .row.container-fluidgit
           .col-md-3.navbar-header
-            = link_to image_tag "Logo.png", class: "brand navbar-left"
+            = link_to root_path do
+              = image_tag "Logo.png", class: "brand navbar-left"
 
           .col-md-9
             %ul.navbar-right

@@ -83,3 +83,4 @@ production:
   database: app-vezba_production
   username: vezba
   password: vezba_123
+  adapter: postgresql
