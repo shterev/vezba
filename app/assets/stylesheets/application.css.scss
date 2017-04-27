@@ -10,6 +10,11 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require_tree .
  *= require_self
- *= require embroideries.sass
  */
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700,300italic,300,400italic,600italic,700italic,800italic&subset=latin,cyrillic);
+ @font-face {
+   font-family: "Kankin";
+   src: font-url( asset-path("Kankin.otf") );
+ }
