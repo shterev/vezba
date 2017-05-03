@@ -2,7 +2,8 @@
   .row.wrapper
     .col-md-6.name-single-show.navbar-left= @embroideries.name
     .col-md-6.navbar-right
-      .back-btn.btn4= link_to 'Свали PDF', region_embroidery_path(@embroideries.region_id, format: "pdf")
+      -# .back-btn.btn4= link_to 'Свали', action: 'download'
+      .back-btn.btn4= link_to 'Свали', download_region_path(@embroideries)
       .back-btn.btn4= link_to '<', :back
     .row
       .col-md-12.wrap-show-img

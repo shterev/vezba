@@ -5,18 +5,15 @@ class EmbroideriesController < ApplicationController
   end
 
   def show
+   @embroideries = Embroidery.find(params[:id])
+  end
+
+  def download
     @embroideries = Embroidery.find(params[:id])
-    respond_to do |format|
-      format.html
-      format.json
-      format.pdf {render template: 'embroideries/embroidery',
-                         pdf: 'embroidery',
-                         disposition: 'attachment',
-                         page_size:'A4',
-                         margin: {top: 10,
-                                  left: 20,
-                                  right: 20}}
-    end
+    send_file(@embroideries.image.current_path,
+                        type: "image/jpg",
+                        disposition: 'attachment',
+                        url_based_filename: true)
   end
 
   def new
