@@ -41,7 +41,7 @@
 
 .text-region
   font: normal 16px/26px Open Sans
-  text-align: justify
+  text-align: left
 
 .wrap-show-img
   margin-bottom: 10%
@@ -63,34 +63,38 @@
   cursor: default
 
 .img-show
+  transform: scale(1)
+  transition: 0.3s
   width: 250%
-  position: absolute
-  left: 50%
-  top: 50%
-  -webkit-transform: translateY(-50%) translateX(-50%)
+  position: relative
+  left: -50%
+  top: -50%
 
 .title-embrodery
   border: 2px solid #ea3838
 
 // BUTTONS VIEW and TITLE
-
-.e-name
-  font-family: 'Kankin'
-  color: #ea3838
-  text-align: left
-  margin-left: 20px
-  margin-top: 15px
-  font-size: 25px
-  a
-    text-decoration: none
+.wraped-show-img
+  .e-name
+    font-family: 'Kankin'
+    color: #ea3838
     text-align: left
-    font-size: 17px
-    font-family: Open Sans
-    font-weight: bold
-    cursor: pointer
-    -webkit-transition-duration: 0.4s
-    transition-duration: 0.4s
-    color: black
-    &:hover
+    margin-left: 20px
+    margin-top: 15px
+    font-size: 25px
+    a
+      text-decoration: none
+      text-align: left
+      font-size: 17px
+      font-family: Open Sans
+      font-weight: bold
+      cursor: pointer
+      -webkit-transition-duration: 0.4s
+      transition-duration: 0.4s
+      color: black
+  &:hover
+    .e-name a
       text-decoration: none
       color: #00ce0a
+    .img-show
+      transform: scale(1.5)

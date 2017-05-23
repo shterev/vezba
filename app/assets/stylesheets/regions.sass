@@ -68,35 +68,29 @@ html, body
 
 .div-region
   padding: 0 25px
+  .hovereffect
+    margin-bottom: 50px
+    a,
+    a:link:visited:hover
+      text-decoration: none
+      color: white
 
-.hovereffect
-  margin-bottom: 50px
-  a,
-  a:link:visited:hover
-    text-decoration: none
+      .overlay
+        border-top: 0 none
+        transition: all 0.2s
+        background-color: #ea3838
+        font-family: 'Kankin'
+        font-size: 30px
+        padding: 22px 59px
+        border: 2px solid #ea3838
 
-    .overlay
-      border-top: 0 none
-      transition: all 0.2s
-      background-color: #ea3838
-      font-family: 'Kankin'
-      font-size: 30px
-      padding: 22px 59px
-      border: 2px solid #ea3838
-      &:hover
+    &:hover
+      .overlay
+        color: #ea3838
         cursor: pointer
         background-color: white
         border: 2px solid #ea3838
         text-decoration: none
-
-.region-title
-  color: white
-
-.overlay:hover .region-title
-  color: #ea3838
-
-.region-container
-  padding-top: 40px
 
 // HAMBURGER MENU
 
@@ -137,34 +131,29 @@ html, body
   margin-bottom: 10px
 
 .footer span
-  color: #777777
+  color: white
   text-transform: uppercase
   letter-spacing: 2px
-
-.footer span a
-  color: #777777
-  text-transform: uppercase
-  letter-spacing: 2px
-  text-decoration: none
-  &:hover
-    color: #ea3838
+  float: left
+  margin-top: 30px
 
 .footer
+  background-color: #ea3838
   position: absolute
   bottom: 0
   left: 0
   width: 100%
-  height: 120px
-.footer p
-  margin: 40px
+  height: 80px
   a
     text-decoration: none
-    color: #ea3838
+    color: white
     border-radius: 36px
-    padding: 6px 22px
-    border: 2px solid #ea3838
-    font-size: 40px
+    padding: 0 15px
+    border: 2px solid white
+    font-size: 27px
     font-weight: bold
+    float: right
+    margin-top: 23px
     &:hover
       text-decoration: none
       background-color: #00ce0a
