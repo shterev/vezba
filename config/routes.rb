@@ -11,7 +11,11 @@ Rails.application.routes.draw do
       get :download, on: :member, to: 'embroideries#download'
 
   end
-  resources :contacts, only: [:new, :create]
+
+  resources :contacts, only: [:new, :create] do
+    get '/', to: redirect('/contacts/new'), on: :collection
+  end
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

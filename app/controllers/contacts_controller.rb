@@ -7,11 +7,10 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(params[:contact])
     @contact.request = request
-    if @contact.deliver
-      flash.now[:error] = nil
-    else
-      flash.now[:error] = 'Съобщението не може да бъде изпратено.'
-      render 'create'
+
+    unless @contact.deliver
+      flash.now[:error] = 'Моля, попълнете всички полета.'
+      render :new
     end
   end
 end
